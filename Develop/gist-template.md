@@ -5,7 +5,11 @@ Regex, short for Regular Expression, is a powerful and standardized sequence of 
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+This regex is used to validate an email address format. It ensures that the email follows the pattern of a username, followed by the "@" symbol, then a domain name, a dot, and a top-level domain (TLD). The username and domain name can consist of lowercase letters, digits, underscores, dots, or hyphens. The TLD is expected to have 2 to 6 lowercase letters or dots. Here is a snippet of what the Regex actually looks like, /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/.
+
+Example valid email: example123@email.com
+Example invalid email: invalid.email@domain
+
 
 ## Table of Contents
 
